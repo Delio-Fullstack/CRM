@@ -1,12 +1,16 @@
-
+const dotenv = require('dotenv')
+dotenv.config()
 const express = require("express");
 const mongoose = require("mongoose");
 //CONNET TO OTHER SERVER
 const cors = require('cors');
 const app = express();
 
+
+
+
 //CONNECTION
-mongoose.connect('mongodb+srv://deliofullstack:Deli0p0ge@cluster0.m5s0y.mongodb.net/CRM?retryWrites=true&w=majority', 
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.m5s0y.mongodb.net/${process.env.DB_DATABASE}?retryWrites=true&w=majority`, 
 	{useNewUrlParser: true, useUnifiedTopology: true, ignoreUndefined: true}
 );
 
