@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from 'react';
 import {employeeApi}  from 'Services/ApiServices';
 import EmployeeTable from 'admin-dashboard/employee/EmployeeTable';
+import CompanyTable from 'admin-dashboard/Company/CompanyTable';
 //import $ from 'jquery'; 
 
 const Dashboard = () => {
@@ -29,8 +30,7 @@ const Dashboard = () => {
         <div className="content">
           <div className="container-fluid">
               <div className="row">
-                <EmployeeTable />
-
+                <CompanyTable />
               </div>
             </div>
           </div>

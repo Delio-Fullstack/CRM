@@ -38,6 +38,9 @@ function App() {
                 <Dashboard /> 
                 <Footer /> 
             </Route>
+            <Route path="/">
+              <Redirect to="/dashboard" />
+            </Route>
             <Route path="/login" exact>
               <Login setToken = {setToken} />  
             </Route>

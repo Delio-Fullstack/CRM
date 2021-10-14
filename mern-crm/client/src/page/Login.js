@@ -4,7 +4,7 @@ import {loginApi, sessionApi}  from 'Services/ApiServices';
 
 
 const Login = ({ setToken }) => {
-    const baseUrl = 'http://localhost:8000';
+    const baseUrl = 'http://localhost:3002';
     const endpoint = '/api/users';
     const [getEmail, setEmail] = useState('');
     const [getPassword, setPassword ] = useState('');
